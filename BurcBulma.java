@@ -3,34 +3,37 @@ import java.util.Scanner;
 public class BurcBulma {
 
 	public static void main(String[] args) {
-		// hangi burç olduğunu bulma
-		/*Koç Burcu : 21 Mart - 20 Nisan
-		Boğa Burcu : 21 Nisan - 21 Mayıs
-		İkizler Burcu : 22 Mayıs - 22 Haziran
-		Yengeç Burcu : 23 Haziran - 22 Temmuz
-		Aslan Burcu : 23 Temmuz - 22 Ağustos
-		Başak Burcu : 23 Ağustos - 22 Eylül
-		Terazi Burcu : 23 Eylül - 22 Ekim
-		Akrep Burcu : 23 Ekim - 21 Kasım
-		Yay Burcu : 22 Kasım - 21 Aralık
-		Oğlak Burcu : 22 Aralık - 21 Ocak
-		Kova Burcu : 22 Ocak - 19 Şubat
-		Balık Burcu : 20 Şubat - 20 Mart */
+		// hangi burÃ§ olduÄŸunu bulma
+		/*KoÃ§ Burcu : 21 Mart - 20 Nisan
+		BoÄŸa Burcu : 21 Nisan - 21 MayÄ±s
+		Ä°kizler Burcu : 22 MayÄ±s - 22 Haziran
+		YengeÃ§ Burcu : 23 Haziran - 22 Temmuz
+		Aslan Burcu : 23 Temmuz - 22 AÄŸustos
+		BaÅŸak Burcu : 23 AÄŸustos - 22 EylÃ¼l
+		Terazi Burcu : 23 EylÃ¼l - 22 Ekim
+		Akrep Burcu : 23 Ekim - 21 KasÄ±m
+		Yay Burcu : 22 KasÄ±m - 21 AralÄ±k
+		OÄŸlak Burcu : 22 AralÄ±k - 21 Ocak
+		Kova Burcu : 22 Ocak - 19 Åubat
+		BalÄ±k Burcu : 20 Åubat - 20 Mart */
 
 		int day , month;
 		Scanner k =new Scanner(System.in);
-		System.out.println("doğduğunuz ayı giriniz");
+		System.out.println("doÄŸduÄŸunuz ayÄ± giriniz");
 		month =k.nextInt();
-		System.out.println("doğduğunuz günü giriniz");
+		System.out.println("doÄŸduÄŸunuz gÃ¼nÃ¼ giriniz");
 		day = k.nextInt();
 		
 		switch  (month) {
 		case 1 :
 			if(day>=1 && day<=31) {
 				if (day <22 ) {
-				System.out.println("oğlak");
+				System.out.println("oÄŸlak");
 			}else 
 				System.out.println("kova");
+			}else
+				System.out.println("geÃ§ersiz giriÅŸ");
+			{
 				
 			break;
 			
@@ -39,31 +42,43 @@ public class BurcBulma {
 				if (day <20 ) {
 				System.out.println("kova");
 			}else 
-				System.out.println("balık");
+				System.out.println("balÄ±k");
+			}else
+				System.out.println("geÃ§ersiz giriÅŸ");
+			{
 			break;
 	}
 	case 3 :
 		if(day>=1 && day<=31)   {
 			if (day <21 ) {
-			System.out.println("balık");
+			System.out.println("balÄ±k");
 		}else 
-			System.out.println("koç");
+			System.out.println("koÃ§");
+		}else
+			System.out.println("geÃ§ersiz giriÅŸ");
+		{
 		break;
 	}	
 case 4:
 		if(day>=1 && day<=30) {
 			if (day <21 ) {
-			System.out.println("koç");
+			System.out.println("koÃ§");
 		}else 
-			System.out.println("boğa");
+			System.out.println("boÄŸa");
+		}else
+			System.out.println("geÃ§ersiz giriÅŸ");
+		{
 		break;
 		}
 		case 5 :
 			if(day>=1 && day<=31) {
 				if (day <22 ) {
-				System.out.println("boğa");
+				System.out.println("boÄŸa");
 			}else 
 				System.out.println("ikizler");
+			}else
+				System.out.println("geÃ§ersiz giriÅŸ");
+			{
 			break;
 		}	
 		case 6:
@@ -71,15 +86,21 @@ case 4:
 				if (day <23 ) {
 				System.out.println("ikizler");
 			}else 
-				System.out.println("yengeç");
+				System.out.println("yengeÃ§");
+			}else
+				System.out.println("geÃ§ersiz giriÅŸ");
+			{
 			break;
 			}
 			case 7 :
 				if(day>=1 && day<=31) {
 					if (day <23 ) {
-					System.out.println("yengeç");
+					System.out.println("yengeÃ§");
 				}else 
 					System.out.println("aslan");
+				}else
+					System.out.println("geÃ§ersiz giriÅŸ");
+				{
 				break;
 			}	
 			case 8:
@@ -87,15 +108,21 @@ case 4:
 					if (day <23 ) {
 					System.out.println("aslan");
 				}else 
-					System.out.println("başak");
+					System.out.println("baÅŸak");
+				}else
+					System.out.println("geÃ§ersiz giriÅŸ");
+				{
 				break;
 				}	
 				case 9 :
 					if(day>=1 && day<=30) {
 						if (day <23 ) {
-						System.out.println("başak");
+						System.out.println("baÅŸak");
 					}else 
 						System.out.println("terazi");
+					}else
+						System.out.println("geÃ§ersiz giriÅŸ");
+					{
 					break;
 				}	
 				case 10:
@@ -104,6 +131,9 @@ case 4:
 						System.out.println("terazi");
 					}else 
 						System.out.println("akrep");
+					}else
+						System.out.println("geÃ§ersiz giriÅŸ");
+					{
 					break;
 					}		
 					case 11 :
@@ -112,26 +142,23 @@ case 4:
 							System.out.println("akrep");
 						}else 
 							System.out.println("yay");
+						}else
+							System.out.println("geÃ§ersiz giriÅŸ");
+						{
 						break;
 					}	
 					case 12:
-						if(day>=1 && day<=31) 
+						if(day>=1 && day<=31) {
 							if (day <22 ) {
 							System.out.println("yay");
 						}else 
-							System.out.println("oğlak");
+							System.out.println("oÄŸlak");
+							}else
+							System.out.println("geÃ§ersiz giriÅŸ");
+		
 						break;
-		
-		
-		
-		
-						
-		
-		
-		
 		}
-		
-		
+	  
 		
 	}
 
