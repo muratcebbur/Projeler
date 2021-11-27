@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class FaktöriyelHesaplama {
+
+public static void main(String[] args) {
+		
+		Scanner k= new Scanner(System.in);
+		System.out.print("faktöriyelini hesaplamak istediğiniz sayıyı giriniz : ");
+		int total=1,m;
+		m=k.nextInt();
+		
+		for(int i=1 ; i<=m ; i++) {
+			
+			total= total*i;
+			
+			
+		}
+		
+		System.out.print("sonuç : " + total);
+	}
+
+}
